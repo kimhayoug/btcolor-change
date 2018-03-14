@@ -22,6 +22,16 @@ class ViewController: UIViewController {
     
     }
 
+    @IBAction func buttonswitch(_ sender: UIButton) {
+        switch a {
+        case 1:
+            view.backgroundColor = UIColor.yellow
+            a += 1
+        default:
+            view.backgroundColor = UIColor.red
+            a = 1
+        }
+    }
     @IBAction func btchange(_ sender: UIButton) {
         if a == 1  {
             view.backgroundColor = UIColor.yellow
